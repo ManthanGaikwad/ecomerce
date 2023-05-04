@@ -17,7 +17,7 @@ dotenv.config()
 connectDb();
 
 //esmodule
-const __filename = fileURLToPathIimport.meta.url)
+const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const app = express();
