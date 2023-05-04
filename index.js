@@ -8,12 +8,17 @@ import product_route from './routes/productRoute.js';
 import admin_route from './routes/adminRoute.js';
 import cors from 'cors'
 import path from 'path';
+import {fileURLToPath} from 'url';
 
 //configure env
 dotenv.config()
 
 //database 
 connectDb();
+
+//esmodule
+const __filename = fileURLToPathIimport.meta.url)
+const __dirname = path.dirname(__filename)
 
 const app = express();
 
